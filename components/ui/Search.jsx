@@ -1,15 +1,15 @@
-import React from 'react';
-import OutsideClickHandler from 'react-outside-click-handler';
-import Title from './Title';
-import Image from 'next/image';
+import React from "react";
+import OutsideClickHandler from "react-outside-click-handler";
+import Title from "./Title";
+import Image from "next/image";
 import { GiCancel } from "react-icons/gi";
 
-const Search = ({setShowModal}/*props*/) => {
-   /*const modal = props.setShowModal;*/
+const Search = ({ setShowModal } /*props*/) => {
+  /*const modal = props.setShowModal;*/
   return (
     <div className="fixed top-0 left-0 w-screen h-screen z-50 after:content-[''] after:w-screen after:h-screen after:bg-white after:absolute after:top-0 after:left-0 after:opacity-60 grid place-content-center">
-        <OutsideClickHandler onOutsideClick={()=>setShowModal(false)}>
-    <div className="w-full h-full grid place-content-center relative">
+      <OutsideClickHandler onOutsideClick={() => setShowModal(false)}>
+        <div className="w-full h-full grid place-content-center relative">
           <div className="relative z-50  md:w-[600px] w-[370px] bg-white border-2 p-10 rounded-3xl">
             <Title addClass="text-[40px] text-center">Search</Title>
             <input
@@ -50,7 +50,7 @@ const Search = ({setShowModal}/*props*/) => {
         </div>
       </OutsideClickHandler>
     </div>
-  )
+  );
 };
 
-export default Search
+export default Search;
