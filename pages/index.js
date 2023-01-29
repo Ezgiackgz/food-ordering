@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from '@/components/layout/Header';
+import Carousel from '@/components/Carousel';
 
 
 export default function Index() {
@@ -17,6 +18,9 @@ export default function Index() {
         />
       </Head>
       <Header />
+      <div className='relative'>
+      <Carousel />
+      </div>
     </div>
     </>
     
