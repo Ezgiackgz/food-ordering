@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Header from '@/components/layout/Header';
 import Carousel from '@/components/Carousel';
+import Campaigns from '@/components/Campaigns';
+
 
 
 export default function Index() {
@@ -18,9 +20,10 @@ export default function Index() {
         />
       </Head>
       <Header />
-      <div className='relative'>
+      <div>
       <Carousel />
       </div>
+      <Campaigns />
     </div>
     </>
     
