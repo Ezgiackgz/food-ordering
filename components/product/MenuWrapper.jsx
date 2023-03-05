@@ -16,6 +16,9 @@ const MenuWrapper = () => {
         <MenuItem />
         <MenuItem />
         </div>
+        <div>
+          <button className='mt-8 btn-order'>Daha Fazlası</button>
+        </div>
     </div>
   )
 }
